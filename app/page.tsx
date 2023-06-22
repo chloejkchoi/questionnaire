@@ -8,7 +8,7 @@ export default function Home() {
   }
   return (
     <div className="flex flex-col items-center bg-white min-h-screen">
-      <div className="bg-white py-24 px-12">
+      <div className="bg-white p-12">
         <div className="flex flex-col items-center w-full gap-6">
           <h1 className="font-bold text-3xl text-slate-900 text-center">
             Welcome to PermitFlow Beta!

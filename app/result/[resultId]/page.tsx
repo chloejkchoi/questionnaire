@@ -23,7 +23,7 @@ export default function Result({ params }: { params: { resultId: string } }) {
   }
   return (
     <div className="flex flex-col items-center bg-white min-h-screen">
-      <div className="bg-white py-12 md:py-24 px-12 w-full lg:w-1/2 2xl:w-1/3">
+      <div className="bg-white p-12 w-full md:w-2/3 lg:w-1/2 2xl:w-1/3">
         <div className="flex flex-col w-full gap-4">
           <h1 className="font-bold text-3xl text-slate-900">You need...</h1>
           <h2 className="font-semibold text-2xl text-slate-800 mt-10">{requirement.name}</h2>
