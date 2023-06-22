@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Token is a random generated token set in the user's cookie.
+model Submission {
+  token         String @id @default(uuid())
+  requirementId String
+}
+
+// Models for the question/requirement
+
+// model Question {
+//   id             String   @id @default(uuid())
+//   prompt         String
+//   isSingleAnswer Boolean
+//   stepsLeft      Int
+//   options        Option[]
+// }
+
+// model Option {
+//   id             String   @id @default(uuid())
+//   text           String
+//   priority       Int?
+//   nextQuestionId String?
+//   question       Question @relation(fields: [questionId], references: [id])
+//   questionId     String
+// }
+
+// model Requirement {
+//   id             String   @id @default(uuid())
+//   priority       Int
+//   text           String
+//   specifications String[]
+// }
