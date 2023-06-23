@@ -1,3 +1,6 @@
+// I set the entire page client component, but if I had more time, i would separate out
+// so that the part that fetches data stays a server component
+// and have a child that uses client state.
 "use client"
 
 import { QUESTIONS } from "@/app/data"

@@ -1,3 +1,7 @@
+// Similar to the [questionId]/page.tsx,
+// I set the entire page client component because of the buttons, but if I had more time, i would separate out
+// so that the part that fetches data stays a server component
+// and have the buttons be client component since
 "use client"
 
 import { REQUIREMENTS } from "@/app/data"
